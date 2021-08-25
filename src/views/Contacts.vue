@@ -8,6 +8,7 @@
             :color="contact.color"
             :link="contact.link"
         />
+    <!-- com -->
     </div>
 </template>
 
