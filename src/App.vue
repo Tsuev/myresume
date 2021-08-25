@@ -1,32 +1,39 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <Sidebar />
+    <div class="main container-fluid position-relative p-0">
+      <transition name="fade">
+        <router-view />
+      </transition>
     </div>
-    <router-view />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Sidebar from "@/container/SidebarContainer/SidebarContainer.vue";
 
-#nav {
-  padding: 30px;
+export default {
+  components: {
+    Sidebar,
+  },
+};
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<style lang="scss" scoped>
+  #app{
+    display: flex;
+    align-items: stretch;
+    font-family: 'Roboto', sans-serif;
   }
-}
+  .main{
+    background: rgb(15, 15, 15);
+    width: 100%;
+    overflow: hidden;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 0;
+  }
 </style>
