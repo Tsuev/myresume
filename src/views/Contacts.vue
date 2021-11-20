@@ -1,28 +1,30 @@
 <template>
-    <div>
-        <Row
-            v-for="contact in contacts"
-            :key="contact.id"
-            :title="contact.title"
-            :img="contact.img"
-            :color="contact.color"
-            :link="contact.link"
-        />
+  <div>
+    <Row
+      v-for="contact in contacts"
+      :key="contact.id"
+      :title="contact.title"
+      :img="contact.img"
+      :color="contact.color"
+      :link="contact.link"
+    />
     <!-- com -->
-    </div>
+  </div>
 </template>
 
 <script>
-import Row from '@/components/Card/ContactRow.vue'
-import {mapState} from 'vuex'
+import Row from "@/components/Card/ContactRow.vue";
+import { mapState } from "vuex";
 export default {
-    components: {
-        Row
-    },
-    computed: mapState(['contacts'])
-}
+  components: {
+    Row,
+  },
+  computed: mapState(["contacts"]),
+  created() {
+    document.title = "Контакты";
+  },
+};
 </script>
 
 <style>
-
 </style>

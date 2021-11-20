@@ -9,8 +9,18 @@
       justify-content-center
     "
   >
-    <div v-show="!state" class="row w-100 info-block justify-content-center align-items-center">
-      <ul class="mt-3 flex-column flex-lg-row justify-content-center align-items-center">
+    <div
+      v-show="!state"
+      class="row w-100 info-block justify-content-center align-items-center"
+    >
+      <ul
+        class="
+          mt-3
+          flex-column flex-lg-row
+          justify-content-center
+          align-items-center
+        "
+      >
         <li class="mb-3 mx-2">
           <input v-model="checkedInps" value="1" type="checkbox" />
           <div>В</div>
@@ -45,7 +55,10 @@
         <div class="prompt text-center w-100 d-flex justify-content-center">
           наведитесь на карточку для просмотра остальных технологий
         </div>
-        <div @click="backAction" class="back w-100 d-flex justify-content-center">
+        <div
+          @click="backAction"
+          class="back w-100 d-flex justify-content-center"
+        >
           🠔 Назад
         </div>
       </div>
@@ -87,6 +100,9 @@ export default {
     checkedInps() {
       this.checkedInps.length >= 6 ? (this.state = true) : null;
     },
+  },
+  created() {
+    document.title = "Навыки";
   },
 };
 </script>
@@ -255,7 +271,7 @@ export default {
 }
 
 @media screen and (max-width: 448px) {
-  .typing-demo{
+  .typing-demo {
     font-size: 1em !important;
   }
 }
