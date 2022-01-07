@@ -8,10 +8,10 @@ export default new Vuex.Store({
     isOpenLogo: false,
     isOpenSidebar: false,
     sidebarMenu: [
-      { title: "Главная", icon: "home.svg", router: "/" },
-      { title: "Навыки", icon: "ninja.svg", router: "about" },
-      { title: "Проекты", icon: "portfolio.svg", router: "portfolio" },
-      { title: "Контакты", icon: "contacts.svg", router: "contacts" },
+      { title: "Главная", icon: "home.svg", router: "/myresume" },
+      { title: "Навыки", icon: "ninja.svg", router: "/myresume/about" },
+      { title: "Проекты", icon: "portfolio.svg", router: "/myresume/portfolio" },
+      { title: "Контакты", icon: "contacts.svg", router: "/myresume/contacts" },
     ],
     cards: [
       {

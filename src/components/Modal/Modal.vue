@@ -11,7 +11,12 @@
 <script>
 import { mapState, mapMutations } from "vuex";
 export default {
-  props: ["photo"],
+  props: {
+    photo: {
+      type: String,
+      default: 'default.png'
+    } 
+  },
   computed: mapState(["modal"]),
   methods: mapMutations(["openedModal"]),
 };

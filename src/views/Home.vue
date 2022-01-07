@@ -19,7 +19,7 @@
         </p>
       </div>
       <div class="col-12 col-lg-6">
-        <img class="img-fluid" src="@/assets/img/mansur.jpg" alt="mansur">
+        <img class="img-fluid mans-img" src="@/assets/img/mansur.jpg" alt="mansur">
       </div>
     </div>
   </div>
@@ -38,6 +38,22 @@ export default {
   color: rgb(165, 165, 165);
   .green-title{
     color: #00a875;
+  }
+}
+.mans-img{
+  border-radius: 100%;
+  animation: animate-img 5s ease-in-out 0.2s infinite alternate-reverse none;
+}
+
+@keyframes animate-img {
+  from{
+    box-shadow: none;
+  }
+  10%{
+    box-shadow: 0 0 10px 0px #224157;
+  }
+  to{
+    box-shadow: 0 0 20px 10px #00a875;
   }
 }
 </style>

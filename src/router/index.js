@@ -5,22 +5,22 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/myresume/",
     name: "Home",
     component: () => import("../views/Home.vue"),
   },
   {
-    path: "/about",
+    path: "/myresume/about",
     name: "About",
     component: () => import("../views/About.vue"),
   },
   {
-    path: "/portfolio",
+    path: "/myresume/portfolio",
     name: "Portfolio",
     component: () => import("../views/Portfolio.vue"),
   },
   {
-    path: "/contacts",
+    path: "/myresume/contacts",
     name: "Contacts",
     component: () => import("../views/Contacts.vue"),
   },
@@ -28,7 +28,6 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  base: process.env.BASE_URL,
   routes,
 });
 
