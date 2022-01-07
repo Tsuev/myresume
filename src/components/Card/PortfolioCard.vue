@@ -1,5 +1,5 @@
 <template>
-  <div class="col d-flex align-items-center justify-content-center">
+  <div class="col-auto d-flex align-items-center justify-content-center">
     <div class="card mb-4">
       <div class="image">
         <img class="img-fluid" :src="require(`@/assets/img/${photo}`)" />

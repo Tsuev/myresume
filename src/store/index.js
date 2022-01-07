@@ -47,11 +47,6 @@ export default new Vuex.Store({
             color: "#167558",
           },
           {
-            title: "Svelte",
-            icon: "svelte.png",
-            color: "#ff4100",
-          },
-          {
             title: "Jquery",
             icon: "jquery.png",
             color: "#1169ae",
@@ -73,6 +68,11 @@ export default new Vuex.Store({
             icon: "bootstrap.png",
             color: "#7a11f8",
           },
+          {
+            title: "Tailwind",
+            icon: "tailwindcss.svg",
+            color: "#07b0ce",
+          },
         ],
       },
     ],
@@ -84,7 +84,7 @@ export default new Vuex.Store({
         description: "TC Badr",
         experience:
           "Дороботал имеющийся проект компании, разработал админку для проекта, после перенес на svelte по просьбе заказчика. Практически полностью выполнен мной",
-        link: "http://b2b.debishev.net/b2b",
+        link: "https://tkbadr.ru/",
         fullImg: "b2bfull.png",
       },
       {
@@ -105,6 +105,36 @@ export default new Vuex.Store({
           "Разрабатывал отдельные компоненты. А также провел часть работы по админке данного проекта.",
         link: "https://edu95.ru/",
         fullImg: "edufull.png",
+      },
+      {
+        id: 3,
+        img: "iddis.png",
+        title: "Интернет магазин производителя",
+        description: "Производитель сантехники IDDIS",
+        experience:
+          "Разработал различные сервисы внутри этого большого проекта.",
+        link: "https://www.iddis.store/",
+        fullImg: "iddisFull.png",
+      },
+      {
+        id: 4,
+        img: "iat.png",
+        title: "Официальный дилер",
+        description: "Сервис обслуживания Toyota, Lexus, Chery, CHERYEXEED",
+        experience:
+          "Интегрировал Vue приложение (персонализация сервисов) в данный проект",
+        link: "https://iat.ru/",
+        fullImg: "iatFull.png",
+      },
+      {
+        id: 5,
+        img: "vtk.png",
+        title: "Интернет провайдет",
+        description: "Региональный интрнет провайдер",
+        experience:
+          "Разработал от А до Ч всю админку проекта",
+        link: "https://lk.vt.ru/",
+        fullImg: "vtkFull.png",
       },
     ],
     modal: { isActive: false, activeImg: "" },
@@ -135,7 +165,7 @@ export default new Vuex.Store({
         title: "Telegram",
         img: "telegram2.png",
         color: "#1e96c8",
-        link: "https://t.me/justdevman",
+        link: "https://t.me/frontdevmansur",
       },
       {
         id: 4,

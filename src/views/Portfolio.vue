@@ -10,7 +10,6 @@
       position-relative
     "
   >
-    <!-- <h1 class="text-white">Проекты</h1> -->
     <div class="row type-text mb-4">
       <div class="wrapper">
         <div class="typing-demo">Мои коммерческие проекты...</div>
@@ -19,17 +18,19 @@
         наведитесь на карточку для более подробной информации
       </div>
     </div>
-    <div class="row">
-      <Card
-        v-for="card in portfolioCards"
-        :key="card.id"
-        :photo="card.img"
-        :title="card.title"
-        :description="card.description"
-        :experience="card.experience"
-        :link="card.link"
-        :fullImg="card.fullImg"
-      />
+    <div class="container">
+      <div class="row flex-wrap">
+        <Card
+          v-for="card in portfolioCards"
+          :key="card.id"
+          :photo="card.img"
+          :title="card.title"
+          :description="card.description"
+          :experience="card.experience"
+          :link="card.link"
+          :fullImg="card.fullImg"
+        />
+      </div>
     </div>
     <Modal :photo="modal.activeImg" :isActive="modal.isActive" />
   </div>

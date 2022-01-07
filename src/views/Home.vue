@@ -7,11 +7,13 @@
           <b class="green-title">Frontend</b> разработчик с опытом <span class="green-title"><b>2</b></span> года ✌️
           <br>
           Себя расцениваю как <span class="green-title"><b>pre-middle</b></span>
+          <br>
+          Люблю писать web-приложения на <span class="green-title"><b>Vue</b></span> и <span class="green-title"><b>Nuxt</b></span>
           <br>Из личных качеств: 
           <ul class="mt-2">
             <li><span class="green-title"><b>Ответственный,</b></span> четко соблюдаю внутреннюю политику.</li>
             <li><b>Пунктуальный,</b> внимателен к срокам.</li>
-            <li><span class="green-title"><b>Коммуникабельный,</b></span> скоро нахожу общий язык с командой.</li>
+            <li><span class="green-title"><b>Коммуникабельный,</b></span> мгновенно нахожу общий язык с командой.</li>
             <li><b>Координированный,</b> быстро вхожу в проект, решаю проблемы.</li>
           </ul>
         </p>
